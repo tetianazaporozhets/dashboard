@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/app.min.js"></script>
+		<link rel="stylesheet" href="css/style.min.css">
+		<title>Dashboard</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<aside class="dashboard">
+				<div class="dashboard__box">
+				<div class="dashboard__header">
+            <img src="img/dashboard-logo.svg" alt="dashboard" class="dashboarg__logo">
+				<h1 class="dashboard__title">Dashboard <span>v.01</span></h1>
+			</div>
+			<nav class="dashboard__nav">
+				<ul class="dashboard__list">
+					<li class="dashboard__item">
+						<a href="" class="dashboard__item-link"><img class="dashboard__item-img" src="img/icon-1.svg" alt="">Dashboard</a></li>
+					<li class="dashboard__item">
+						<a href="" class="dashboard__item-link"><img class="dashboard__item-img" src="img/icon-2.svg" alt="">Product</a></li>
+					<li class="dashboard__item">
+						<a href="" class="dashboard__item-link"><svg class="dashboard__item-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+							<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M24 20a7 7 0 1 0 0-14a7 7 0 0 0 0 14ZM6 40.8V42h36v-1.2c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C35.92 28 33.68 28 29.2 28H18.8c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496C6 34.08 6 36.32 6 40.8Z"/>
+						 </svg>Customers</a></li>
+					<li class="dashboard__item">
+						<a href="" class="dashboard__item-link"><img class="dashboard__item-img" src="img/icon-4.svg" alt="">Income</a></li>
+					<li class="dashboard__item">
+						<a href="" class="dashboard__item-link"><img class="dashboard__item-img" src="img/icon-5.svg" alt="">Promote</a></li>
+					<li class="dashboard__item">
+						<a href="" class="dashboard__item-link"><img class="dashboard__item-img" src="img/icon-6.svg" alt="">Help</a></li>
+				</ul>
+			</nav>
+		</div>
+			<div class="client">
+				<img class="client__img" src="img/client.jpg" alt="">
+				<div class="client__info">
+					<p class="client__name">Evano</p>
+					<p class="client__profession">Project Manager</p>
+				</div>
+			</div>
+			</aside>
+			<main class="main">
+				<h2 class="main__subtitle">Hello Evano 👋🏼,</h2>
+				<div class="customers">
+					<div class="customers__block">
+						<div class="customers__subtitle-block">
+					<h2 class="customers__subtitle">All Customers</h2>
+					<h3 class="customers__subtitle-active">Active Members</h3>
+				</div>
+					<form class="customers__search-form" action="">
+						<input class="customers__search-input" placeholder="Search" name="search" type="text" id="search">
+						<input class="customers__search-btn" type="submit" value="Search">
+					</form>
+				</div>
+					<table class="customers__table">
+						<div class="customers__table-body">
+							<tr class="customers__table-item">
+								<th class="customers__table-title">Customer Name</th>
+								<th class="customers__table-title">Company</th>
+								<th class="customers__table-title">Phone Number</th>
+								<th class="customers__table-title">Email</th>
+								<th class="customers__table-title">Country</th>
+								<th class="customers__table-title">Status</th>
+							</tr>
+							<tr class="customers__table-item">
+								<td class="customers__table-text">Jane Cooper</td>
+								<td class="customers__table-text">Microsoft</td>
+								<td class="customers__table-text">(225) 555-0118</td>
+								<td class="customers__table-text">jane@microsoft.com</td>
+								<td class="customers__table-text">United States</td>
+								<td class="customers__table-text"><button type="button" class="customers__active customers__button">Active</button></td>
+							</tr>
+							<tr class="customers__table-item">
+								<td class="customers__table-text">Floyd Miles</td>
+								<td class="customers__table-text">Yahoo</td>
+								<td class="customers__table-text">(205) 555-0100</td>
+								<td class="customers__table-text">floyd@yahoo.com</td>
+								<td class="customers__table-text">Kiribati</td>
+								<td class="customers__table-text"><button type="button" class="customers__inactive customers__button">Inactive</button></td>
+							</tr>
+							<tr class="customers__table-item">
+								<td class="customers__table-text">Ronald Richards</td>
+								<td class="customers__table-text">Adobe</td>
+								<td class="customers__table-text">(302) 555-0107</td>
+								<td class="customers__table-text">ronald@adobe.com</td>
+								<td class="customers__table-text">Israel</td>
+								<td class="customers__table-text"><button type="button" class="customers__inactive customers__button">Inactive</button></td>
+							</tr>
+							<tr class="customers__table-item">
+								<td class="customers__table-text">Marvin McKinney</td>
+								<td class="customers__table-text">Tesla</td>
+								<td class="customers__table-text">(252) 555-0126</td>
+								<td class="customers__table-text">marvin@tesla.com</td>
+								<td class="customers__table-text">Iran</td>
+								<td class="customers__table-text"><button type="button" class="customers__active customers__button">Active</button></td>
+							</tr>
+							<tr class="customers__table-item">
+								<td class="customers__table-text">Jerome Bell</td>
+								<td class="customers__table-text">Google</td>
+								<td class="customers__table-text">(629) 555-0129</td>
+								<td class="customers__table-text">jerome@google.com</td>
+								<td class="customers__table-text">Réunion</td>
+								<td class="customers__table-text"><button type="button" class="customers__active customers__button">Active</button></td>
+							</tr>
+							<tr class="customers__table-item">
+								<td class="customers__table-text">Kathryn Murphy</td>
+								<td class="customers__table-text">Microsoft</td>
+								<td class="customers__table-text">(406) 555-0120</td>
+								<td class="customers__table-text">kathryn@microsoft.com</td>
+								<td class="customers__table-text">Curaçao</td>
+								<td class="customers__table-text"><button type="button" class="customers__active customers__button">Active</button></td>
+							</tr>
+							<tr class="customers__table-item">
+								<td class="customers__table-text">Jacob Jones</td>
+								<td class="customers__table-text">Yahoo</td>
+								<td class="customers__table-text">(208) 555-0112</td>
+								<td class="customers__table-text">jacob@yahoo.com</td>
+								<td class="customers__table-text">Brazil</td>
+								<td class="customers__table-text"><button type="button" class="customers__active customers__button">Active</button></td>
+							</tr>
+							<tr class="customers__table-item">
+								<td class="customers__table-text">Kristin Watson</td>
+								<td class="customers__table-text">Facebook</td>
+								<td class="customers__table-text">(704) 555-0127</td>
+								<td class="customers__table-text">kristin@facebook.com</td>
+								<td class="customers__table-text">Åland Islands</td>
+								<td class="customers__table-text"><button type="button" class="customers__inactive customers__button">Inactive</button></td>
+							</tr>
+						</div>
+					</table>
+					<div class="customers__pages">
+					<p class="customers__text">Showing data 1 to 8 of  256K entries</p>
+					<div class="customers__button-pagination" id="pagination-buttons">
+						<a class="customers__button-link" href="#"><</a>
+                  <a class="customers__button-link" href="#">1</a>
+                  <a class="customers__button-link" href="#">2</a>
+                  <a class="customers__button-link" href="#">3</a>
+                  <a class="customers__button-link" href="#">4</a>
+                  <span>...</span>
+                  <a class="customers__button-link" href="#">40</a>
+                  <a class="customers__button-link" href="#">></a>
+					</div>
+				</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
